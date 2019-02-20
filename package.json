@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "xo",
-    "start": "electron .",
+    "start": "electron ./src/",
     "build": "electron-packager . --out=dist --asar --overwrite --all"
   },
   "dependencies": {
@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "devtron": "^1.4.0",
-    "electron-packager": "^12.1.0",
     "electron": "^2.0.2",
+    "electron-packager": "^13.1.0",
     "xo": "^0.21.1"
   },
   "xo": {
