@@ -1,0 +1,101 @@
+// =============================================================
+// General
+// =============================================================
+
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  &:not(:first-child) {
+    margin-top: 1em;
+  }
+}
+
+button {
+  cursor: pointer;
+  padding: 0.7em 1.6em;
+
+  border: none;
+  border-radius: 5px;
+
+  color: black;
+  background-color: #e7e7e7;
+  transition: 0.15s ease;
+
+  &:hover {
+    background-color: #c2c2c2;
+  }
+}
+
+// =============================================================
+// Form
+// =============================================================
+
+input {
+  padding: 0.5em 1.5em;
+}
+
+// =============================================================
+// Table
+// =============================================================
+
+.table {
+  width: 500px;
+  border: solid #e7e7e7 1px;
+  .header {
+    text-align: center;
+    color: white;
+    padding: 0.75em 0;
+    font-weight: bold;
+    background-color: gray;
+  }
+  ul {
+    height: 250px;
+    overflow-y: scroll;
+  }
+  li:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+}
+
+$table--li-height: 45px;
+
+.table span {
+  display: inline-block;
+  padding: 0 1em;
+  box-sizing: border-box;
+
+  height: $table--li-height;
+  line-height: $table--li-height;
+
+  &:first-child {
+    border-right: solid #f1f1f1 1px;
+  }
+}

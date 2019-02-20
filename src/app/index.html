@@ -3,21 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <title>My Electron App</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./lib/css/fontawesome.min.css" />
+    <script src="./lib/js/sass.sync.js"></script>
     <!-- Scripts -->
+    <script src="../database/create.js"></script>
     <script src="../database/initialize.js"></script>
     <script src="../database/api.js"></script>
-    <script src="./scripts/ajax.js"></script>
+    <script src="./scripts/initialize.js"></script>
     <script src="./scripts/main.js"></script>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>My Electron App</h1>
-      </header>
-      <section class="main"></section>
-      <footer></footer>
-    </div>
+    <main>
+      <h1>My Form</h1>
+      <form onsubmit="insertData">
+        <input name="data" type="text" placeholder="Type some text..." />
+        <button type="submit">Add data to DB</button>
+      </form>
+      <h1>Database Content</h1>
+      <div class="table">
+        <div class="header">
+          Content
+        </div>
+        <ul id="result-demo"></ul>
+      </div>
+    </main>
   </body>
 </html>
