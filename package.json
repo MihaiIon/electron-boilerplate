@@ -11,23 +11,17 @@
     "url": ""
   },
   "scripts": {
-    "test": "xo",
     "start": "electron ./src/",
-    "build": "electron-packager . --out=dist --asar --overwrite --all"
+    "build": "electron-packager ./src/ --out=dist --asar --overwrite --all"
   },
   "dependencies": {
-    "electron-debug": "^2.0.0"
+    "electron-debug": "^2.0.0",
+    "jquery": "^3.3.1",
+    "sql.js": "^0.5.0"
   },
   "devDependencies": {
     "devtron": "^1.4.0",
     "electron": "^2.0.2",
-    "electron-packager": "^13.1.0",
-    "xo": "^0.21.1"
-  },
-  "xo": {
-    "envs": [
-      "node",
-      "browser"
-    ]
+    "electron-packager": "^13.1.0"
   }
 }
