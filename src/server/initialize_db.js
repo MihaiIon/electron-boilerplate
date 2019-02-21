@@ -28,9 +28,10 @@ const commitChangesToDatabase = () => {
 // Connect to Database
 // ======================================================
 
-if (fs.existsSync(dbFilePath || forceTableCreation)) {
-  db = new SQL.Database(fs.readFileSync(dbFilePath));
-} else {
+if (forceTableCreation || !fs.existsSync(dbFilePath)) {
   db = createDatabaseTables(new SQL.Database());
   commitChangesToDatabase();
+} else {
+  const uInt8Array = new Uint8Array(fs.readFileSync(dbFilePath));
+  db = new SQL.Database(uInt8Array);
 }

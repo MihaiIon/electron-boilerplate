@@ -11,22 +11,23 @@
     <script src="../server/initialize_db.js"></script>
     <script src="../server/api.js"></script>
     <script src="./scripts/initialize.js"></script>
-    <script src="./scripts/main.js"></script>
   </head>
   <body>
     <main>
       <h1>My Form</h1>
-      <form onsubmit="insertData">
+      <form id="form-demo">
         <input name="data" type="text" placeholder="Type some text..." />
         <button type="submit">Add data to DB</button>
       </form>
       <h1>Database Content</h1>
       <div class="table">
         <div class="header">
-          Content
+          Data (entries)
         </div>
         <ul id="result-demo"></ul>
       </div>
     </main>
+    <!-- Hooks -->
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
