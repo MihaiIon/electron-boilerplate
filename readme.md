@@ -1,23 +1,51 @@
-# app [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+# Teaching SQL | Electron Application
 
-> My superb app
+This is a simple **Web Application** that uses a **SQLite** database.
 
-## Dev
+# Installation
+
+Simply run the following command in a terminal (at the root of the project):
 
 ```
 $ npm install
 ```
 
-### Run
+Than, to start the application:
 
 ```
 $ npm start
 ```
 
-### Build
+> **NodeJs** must be installed on the host machine.
+
+# Structure
 
 ```
-$ npm run build
+[.]
+├── dist/                # Build folder
+├── docs/                # Documentation (TODO)
+├── node_modules/        # NodeJs modules
+├── src/                 # Source code
+|   ├── app/             # Application code
+|   ├── server/          # Server code
+|   └── index.js         # Entry point
+├── package.json         # Node packages
+├── README.md            # You are reading it
+└── _.code-workspace     # VSCode workplace
 ```
 
-Builds the app for macOS, Linux, and Windows, using [electron-packager](https://github.com/electron-userland/electron-packager).
+# Documentation
+
+For further documentation on how to use this application, take a look at the following directory :
+
+> \_\_root\_\_ / docs /
+
+# Libraries
+
+## Font Awesome
+
+We will use [Font Awesome Icons](https://fontawesome.com/icons?d=gallery). Basic usage : [Link to docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
+
+## jQuery
+
+...Everybody knows **jQuery**!
