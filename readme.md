@@ -10,7 +10,7 @@ Simply run the following command in a terminal (at the root of the project):
 $ npm install
 ```
 
-Than, to start the application:
+Then, to start the application:
 
 ```
 $ npm start
@@ -36,7 +36,7 @@ $ npm start
 
 # Documentation
 
-For further documentation on how to use this application, take a look at the following directory :
+For further documentation on how to use this application, take a look at the following directory:
 
 > \_\_root\_\_ / docs /
 
@@ -44,7 +44,7 @@ For further documentation on how to use this application, take a look at the fol
 
 ## Font Awesome
 
-We will use [Font Awesome Icons](https://fontawesome.com/icons?d=gallery). Basic usage : [Link to docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
+We will use [Font Awesome Icons](https://fontawesome.com/icons?d=gallery). Basic usage: [Link to docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
 
 ## jQuery
 
